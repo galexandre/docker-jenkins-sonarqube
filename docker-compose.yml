@@ -3,7 +3,7 @@ jenkins:
   ports:
     - "8080:8080"
   environment:
-    - JAVA_OPTS: -Djava.awt.headless=true
+    - JAVA_OPTS:-Djava.awt.headless=true
   volumes:
     - /var/jenkins_home
 

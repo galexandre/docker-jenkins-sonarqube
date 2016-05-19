@@ -32,12 +32,14 @@ Jenkins and SonarQube are available on the following ports:
 - Jenkins: 8080
 - SonarQube: 9000
 
-On the first start, Jenkins will ask you for a password. This password is display in the log. However, you can have access to this password via the container. 
+At the first start, Jenkins will ask you for a password. This password is displayed in the log. However, you can have access to this password via the container. 
 
-To create a connection to te container, you have just to do this command:
+To create a connection to the container, you have just to do this command:
 ```Bash 
 docker exec -i -t jenkins bash
 ```
+
+## 4. Connection between Jenkins and SonarQube
 
 ## License
 

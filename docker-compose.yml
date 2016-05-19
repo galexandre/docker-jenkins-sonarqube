@@ -31,11 +31,13 @@ db:
 
 datadb:
   image: postgres
+  container_name: plugins_postgres
   volumes:
     - /var/lib/postgresql
   command: /bin/true
 
 plugins:
+  container_name: plugins_sonarqube
   image: sonarqube
   volumes:
    - /opt/sonarqube/extensions

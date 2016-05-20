@@ -6,18 +6,18 @@ To use this program, you must have `docker` and `docker-compose` installed on yo
 
 ## 2. Start the program
 
-First of all, you have to clone the project in your directory with the following command:
+First of all, you have to clone this project in your directory with the following command:
 ```Bash
 git clone https://github.com/galexandre/docker-jenkins-sonarqube.git
 ```
 
-Then, go to the `jenkins` directory and execute the following commands. The commands will give the right to the container to execute the files.
+Then, go to the `jenkins` directory. Execute the following command. 
 
 ```Bash 
 chmod 777 jenkins.sh
-chmod 777 plugins.sh
-chmod 777 init.groovy
 ```
+
+The command will give the right to the container to execute the file `jenkins.sh`.
 
 Now, you can start the program via the following command:
 
@@ -38,8 +38,11 @@ To create a connection to the container, you have just to do this command:
 ```Bash 
 docker exec -i -t jenkins bash
 ```
+Use the command cat on the specific file and copy the password.
 
 ## 4. Connection between Jenkins and SonarQube
+
+//TODO
 
 ## License
 
